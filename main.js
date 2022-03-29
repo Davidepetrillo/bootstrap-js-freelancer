@@ -34,7 +34,7 @@ if (codiciSconto == discount[i]){
 }
 }
 if (flag == true){
-
+    document.getElementById("secondaRiga").classList.add ("text-success");
             if (jobs == 1){
             let priceBackEndHourWithDiscount = (priceBackEndHour - ((priceBackEndHour * 25)/100));
             let priceBackEndFinalWithDiscount = hours * priceBackEndHourWithDiscount;
@@ -55,6 +55,7 @@ if (flag == true){
                 document.getElementById("terzaRiga").innerHTML= `Il prezzo finale a lei dedicato è ${priceProjectAnalysisFinalWithDiscountround}€`;
 }
 } else if(flag == false){
+    document.getElementById("secondaRiga").classList.add ("text-danger");
     document.getElementById("secondaRiga").innerHTML = `Mi dispiace ma non hai diritto a nessuno sconto`;
 }
 }
