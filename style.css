@@ -1,0 +1,20 @@
+.carousel { 
+width:600px; height:320px; 
+}
+
+.menu {
+    width: 100%;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a {
+    color: rgb(99, 218, 248);
+    padding: 5px;
+    display: block;
+}
+.nav {
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgb(57, 63, 78);
+}
