@@ -34,7 +34,7 @@ if (codiciSconto == discount[i]){
 }
 }
 if (flag == true){
-    document.getElementById("secondaRiga").classList.add ("text-success");
+            document.getElementById("secondaRiga").classList.add ("text-success");
             if (jobs == 1){
             let priceBackEndHourWithDiscount = (priceBackEndHour - ((priceBackEndHour * 25)/100));
             let priceBackEndFinalWithDiscount = hours * priceBackEndHourWithDiscount;
@@ -42,20 +42,21 @@ if (flag == true){
             document.getElementById("secondaRiga").innerHTML = `Lei ha diritto ad uno sconto del 25%`;
             document.getElementById("terzaRiga").innerHTML= `Il prezzo finale a lei dedicato è ${priceBackEndFinalWithDiscountround}€`;
            }else if (jobs == 2){
-                let priceFrontEndHourWithDiscount = (priceFrontEndHour - ((priceFrontEndHour * 25)/100));
-                let priceFrontEndFinalWithDiscount = hours * priceFrontEndHourWithDiscount;
-                let priceFrontEndFinalWithDiscountround= Math.round((priceFrontEndFinalWithDiscount + Number.EPSILON) * 100) / 100;
-                document.getElementById("secondaRiga").innerHTML = `Lei ha diritto ad uno sconto del 25%`;
-                document.getElementById("terzaRiga").innerHTML= `Il prezzo finale a lei dedicato è ${priceFrontEndFinalWithDiscountround}€`;
+            let priceFrontEndHourWithDiscount = (priceFrontEndHour - ((priceFrontEndHour * 25)/100));
+            let priceFrontEndFinalWithDiscount = hours * priceFrontEndHourWithDiscount;
+            let priceFrontEndFinalWithDiscountround= Math.round((priceFrontEndFinalWithDiscount + Number.EPSILON) * 100) / 100;
+            document.getElementById("secondaRiga").innerHTML = `Lei ha diritto ad uno sconto del 25%`;
+            document.getElementById("terzaRiga").innerHTML= `Il prezzo finale a lei dedicato è ${priceFrontEndFinalWithDiscountround}€`;
            }else if (jobs == 3){
-                let priceProjectAnalysisWithDiscount = (priceProjectAnalysisHour - ((priceProjectAnalysisHour * 25)/100));
-                let priceProjectAnalysisFinalWithDiscount = hours * priceProjectAnalysisWithDiscount;
-                let priceProjectAnalysisFinalWithDiscountround= Math.round((priceProjectAnalysisFinalWithDiscount + Number.EPSILON) * 100) / 100;
-                document.getElementById("secondaRiga").innerHTML = `Lei ha diritto ad uno sconto del 25%`;
-                document.getElementById("terzaRiga").innerHTML= `Il prezzo finale a lei dedicato è ${priceProjectAnalysisFinalWithDiscountround}€`;
+            let priceProjectAnalysisWithDiscount = (priceProjectAnalysisHour - ((priceProjectAnalysisHour * 25)/100));
+            let priceProjectAnalysisFinalWithDiscount = hours * priceProjectAnalysisWithDiscount;
+            let priceProjectAnalysisFinalWithDiscountround= Math.round((priceProjectAnalysisFinalWithDiscount + Number.EPSILON) * 100) / 100;
+            document.getElementById("secondaRiga").innerHTML = `Lei ha diritto ad uno sconto del 25%`;
+            document.getElementById("terzaRiga").innerHTML= `Il prezzo finale a lei dedicato è ${priceProjectAnalysisFinalWithDiscountround}€`;
 }
 } else if(flag == false){
     document.getElementById("secondaRiga").classList.add ("text-danger");
+    document.getElementById("discountCode").classList.add ("text-danger");
     document.getElementById("secondaRiga").innerHTML = `Mi dispiace ma non hai diritto a nessuno sconto`;
 }
 }
