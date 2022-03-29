@@ -24,7 +24,7 @@
                 <header>
                     <img src="img/undraw_profile_pic_ic5t.svg" alt="Foto tessera di Pinco Pallo" class="carousel mt-3">
                     <h4>Pallino Pallo</h4>
-                    <p>Web Designer</p>
+                    <p id="sottotitolo">Web Designer</p>
                 </header>
               </div>
           </div>
@@ -186,13 +186,20 @@
                             <textarea class="form-control" id="message" rows="5"></textarea>
                           </div>
                         
-                        <div class="col-12 text-center mb-5">
-                          <button type="submit" class="btn btn-warning">Send</button>
+                        <div class="col-12 text-center mb-2">
+                          <button onsubmit="submitForm(event)" type="submit" class="btn btn-warning" id="bottone">Send</button>
                         </div>
                       </form>
                 </div>
             </div>
     
+        </div>
+        <div class="container-fluid bg-info text-center">
+            <div class="row">
+                <div class="col">
+                    <p id="primaRiga" class="mb-5"></p>
+                </div>
+            </div>
         </div>
     </main>
         <footer>
