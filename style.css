@@ -1,5 +1,14 @@
 .carousel { 
-width:600px; height:320px; 
+width: 40%; 
+height:40%; 
+max-width: 600px;
+max-height: 320px;
+}
+@media (max-width: 768px){
+    .carousel{
+        width: 50%; 
+        height:50%; 
+    }
 }
 
 .menu {
@@ -16,5 +25,8 @@ width:600px; height:320px;
 .nav {
     margin-left: 0%;
     margin-right: 0%;
-    background-color: rgb(57, 63, 78);
+    background-color: rgb(39, 44, 54);
+}
+.indirizzo {
+    margin-top: -1.2rem;
 }

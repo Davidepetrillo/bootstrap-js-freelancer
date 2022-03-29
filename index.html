@@ -12,23 +12,24 @@
   </head>
   <body>
         <nav class="mx-0 nav">
-            <ul class="menu">
-                <li><a href="" class="Portfolio">Portfolio</a></li>
-                <li><a href="" class="ContactMe">Contact Me</a></li>
+            <ul class="menu position-relative">
+                <li><a href="" class="Portfolio position-absolute top-50 start-0 translate-middle-y mx-5 my-1">Portfolio</a></li>
+                <li><a href="" class="ContactMe position-absolute top-50 end-0 translate-middle-y mx-5 my-1">Contact Me</a></li>
             </ul>
         </nav>
-    
+        
       <div class="container-fluid bg-info mx-0">
           <div class="row mx-0">
               <div class="col align-items-center text-center mx-0">
                 <header>
-                    <img src="img\undraw_profile_pic_ic5t.svg" alt="Foto tessera di Pinco Pallo" class="img-responsive carousel mt-3">
+                    <img src="img\undraw_profile_pic_ic5t.svg" alt="Foto tessera di Pinco Pallo" class="carousel mt-3">
                     <h4>Pallino Pallo</h3>
                     <p>Web Designer</p>
                 </header>
               </div>
           </div>
       </div>
+    
       <main>
           <div class="container">
               <div class="row">
@@ -37,7 +38,7 @@
           </div>
           <div class="container my-3">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-12 col-md-6 col-lg-4">
     
                     <div class="card shadow p-3 mb-5 bg-body rounded px-0 py-0">   
                         <img src="img\cabin.png" class="img-fluid" alt="...">               
@@ -54,7 +55,7 @@
     
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-12 col-md-6 col-lg-4">
     
                     <div class="card shadow p-3 mb-5 bg-body rounded px-0 py-0">
                         <img src="img\cake.png" class="img-fluid" alt="...">                
@@ -71,7 +72,7 @@
     
                 </div>
                   
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-12 col-md-6 col-lg-4">
     
                     <div class="card shadow p-3 mb-5 bg-body rounded px-0 py-0">
                         <img src="img\circus.png" class="img-fluid" alt="...">               
@@ -88,13 +89,10 @@
                     
                 </div>
     
-            </div>
-        </div>
-        <div class="container my-3">
-            <div class="row">
+            
     
                 
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-12 col-md-6 col-lg-4">
     
                     <div class="card shadow p-3 mb-5 bg-body rounded px-0 py-0">   
                         <img src="img\game.png" class="img-fluid" alt="...">               
@@ -111,7 +109,7 @@
     
                 </div>
                 
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-12 col-md-6 col-lg-4">
     
                     <div class="card shadow p-3 mb-5 bg-body rounded px-0 py-0">
                         <img src="img\safe.png" class="img-fluid" alt="...">                
@@ -128,7 +126,7 @@
     
                 </div>
              
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-12 col-md-6 col-lg-4">
     
                     <div class="card shadow p-3 mb-5 bg-body rounded px-0 py-0">
                         <img src="img\submarine.png" class="img-fluid" alt="...">               
@@ -171,9 +169,13 @@
                             <label for="hoursRequested" class="form-label">Hours requested</label>
                             <input type="number" class="form-control" id="hoursRequested">
                           </div>
-                          <div class="col-md-6">
-                            <label for="typeOfWork" class="form-label">Type Of Work</label>
-                            <input type="text" class="form-control" id="typeOfWork">
+                                <div class="col-md-6">
+                                    <label for="typeOfWork" class="form-label">Type of Work</label>
+                                    <select id="typeOfWork" class="form-select">
+                                        <option value="1">BackEnd Development</option>
+                                        <option value="2">FrontEnd Develpoment</option>
+                                        <option value="3">Project Analisys</option>
+                                    </select>
                           </div>
                           <div class="col-md-6">
                             <label for="discountCode" class="form-label">Discount code</label>
@@ -181,7 +183,7 @@
                           </div>
                           <div class="col-md-12">
                             <label for="message" class="form-label">Message</label>
-                            <input type="text" class="form-control" id="message">
+                            <textarea class="form-control" id="message" rows="=20"></textarea>
                           </div>
                         
                         <div class="col-12 text-center mb-5">
@@ -192,13 +194,25 @@
             </div>
     
         </div>
+    </main>
+        <footer>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center text-white-50 bg-dark"">
+            <h5 class="mt-5">LOCATION</h5>
+            <p>2215 Joh Daniel Drive</p>
+            <p class="indirizzo">Clark, MO 65243</p>
+
+            <p class="mt-4">Copyright &copy; Your Website 2021</p>
+
+        </div>
+    </div>
+</div>
 
 
 
 
-
-
-      </main>
+        </footer>
                 
 
     <script src="main.js"></script>
